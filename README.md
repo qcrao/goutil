@@ -1,5 +1,9 @@
 goutil: Your Go-To Utility Library for Go
 
+[![CI](https://github.com/qcrao/goutil/workflows/CI/badge.svg?branch=master)](https://github.com/qcrao/goutil/actions)
+[![codecov](https://codecov.io/gh/qcrao/goutil/branch/master/graph/badge.svg)](https://codecov.io/gh/qcrao/goutil)
+[![Go Report Card](https://goreportcard.com/badge/github.com/qcrao/goutil)](https://goreportcard.com/report/github.com/qcrao/goutil)
+
 # Introduction
 
 goutil is a comprehensive, easy-to-use utility library for Go programmers. It provides a collection of handy utility functions that are commonly used in day-to-day programming tasks. This library aims to enhance productivity by reducing the time spent on writing and maintaining common utility functions.
