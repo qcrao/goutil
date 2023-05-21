@@ -1,7 +1,6 @@
 package goutil
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -22,6 +21,5 @@ func Float64Equal(f1 float64, f2 float64, optionalPrecision ...uint8) bool {
 
 	threshold := math.Pow10(-int(actualPrecision))
 
-	fmt.Println(f1, f2, math.Abs(f1-f2), threshold)
 	return math.Abs(f1-f2) <= threshold
 }
