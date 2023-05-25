@@ -6,6 +6,8 @@ goutil: Your Go-To Utility Library for Go
 
 # Introduction
 
+[doc online](https://pkg.go.dev/github.com/qcrao/goutil)
+
 goutil is a comprehensive, easy-to-use utility library for Go programmers. It provides a collection of handy utility functions that are commonly used in day-to-day programming tasks. This library aims to enhance productivity by reducing the time spent on writing and maintaining common utility functions.
 
 # Features
