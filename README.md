@@ -1,8 +1,10 @@
 goutil: Your Go-To Utility Library for Go
 
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/qcrao/goutil?style=flat-square)
 [![CI](https://github.com/qcrao/goutil/workflows/CI/badge.svg?branch=master)](https://github.com/qcrao/goutil/actions)
 [![codecov](https://codecov.io/gh/qcrao/goutil/branch/master/graph/badge.svg)](https://codecov.io/gh/qcrao/goutil)
 [![Go Report Card](https://goreportcard.com/badge/github.com/qcrao/goutil)](https://goreportcard.com/report/github.com/qcrao/goutil)
+[![Go Reference](https://pkg.go.dev/badge/github.com/qcrao/goutil.svg)](https://pkg.go.dev/github.com/qcrao/goutil)
 
 # Introduction
 
