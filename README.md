@@ -1,4 +1,4 @@
-goutil: Your Go-To Utility Library for Go
+[goutil](https://github.com/qcrao/goutil): Your Go-To Utility Library for Go
 
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/qcrao/goutil?style=flat-square)
 [![CI](https://github.com/qcrao/goutil/workflows/CI/badge.svg?branch=master)](https://github.com/qcrao/goutil/actions)
