@@ -79,7 +79,7 @@ func (cf RetryableFunc) WithContext() RetryableFuncWithContext {
 
 func exponentialBackoff(backoff BackoffWait, fn RetryableFunc) error {
 	for backoff.TotalRuns > 0 {
-		if ok, err := fn(); err != nil || ok {
+		if done, err := fn(); err != nil || done {
 			return err
 		}
 
@@ -99,7 +99,7 @@ func exponentialBackoffWithCtx(ctx context.Context, backoff BackoffWait, fnWithC
 		case <-ctx.Done():
 			return ErrTimeout
 		default:
-			if ok, err := fnWithContext(ctx); err != nil || ok {
+			if done, err := fnWithContext(ctx); err != nil || done {
 				return err
 			}
 
