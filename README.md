@@ -39,3 +39,9 @@ You can then call the utility functions as per your requirement. For example:
 ```go
 result := goutil.SomeUtilityFunction(input)
 ```
+
+# go test
+
+```sh
+go test -race -coverprofile=coverage.txt -covermode=atomic ./... && go tool cover -html=coverage.txt
+```

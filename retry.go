@@ -99,15 +99,22 @@ func exponentialBackoffWithCtx(ctx context.Context, backoff BackoffWait, fnWithC
 		case <-ctx.Done():
 			return ErrTimeout
 		default:
-			if done, err := fnWithContext(ctx); err != nil || done {
+			done, err := fnWithContext(ctx)
+			backoff.TotalRuns--
+
+			if err != nil || done {
 				return err
 			}
 
-			if backoff.TotalRuns == 1 {
+			if backoff.TotalRuns <= 0 {
 				break
 			}
 
 			time.Sleep(backoff.wait())
+		}
+
+		if backoff.TotalRuns <= 0 {
+			break
 		}
 	}
 
